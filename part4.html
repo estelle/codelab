@@ -978,7 +978,7 @@ W = <input type="range" id="width" min="0" max="50" value="34" step="1" onChange
           </style>
           <section>
             <pre contenteditable>p {
-  text-overflow: ellipsis; <input type="range" min="0" max="100" value="94" onChange="changeWrapping(event)" style="float:right">
+  text-overflow: ellipsis; <input type="range" min="0" max="100" value="94" onChange="changeWrapping(event, 'textwraps')" style="float:right">
   white-space: nowrap;
   overflow: hidden;
 }</pre>
@@ -999,15 +999,15 @@ W = <input type="range" id="width" min="0" max="50" value="34" step="1" onChange
   <ul class="icons" style="clear: both;">
          <li class="chrome">Chrome</li>
          <li class="safari">Safari</li>
-         <li class="firefox new">Firefox 7</li>
+         <li class="firefox">Firefox 7</li>
          <li class="opera">Opera 11</li>
          <li class="ie">IE 6</li>
      </ul>          
           </section>
 
           <script defer="">
-            function changeWrapping(event) {
-              document.getElementById('textwraps').style.width = event.target.value + '%';
+            function changeWrapping(event, thisid) {
+              document.getElementById(thisid).style.width = event.target.value + '%';
             }
           </script>
     </section>
@@ -1017,7 +1017,8 @@ W = <input type="range" id="width" min="0" max="50" value="34" step="1" onChange
 	<header><h1>word-wrap: breakword</h1></header>
     <section class="content">
     <pre contenteditable>word-wrap:  normal | break-word</pre>
-    <div style="width: 15em; word-wrap:break-word;" class="codelike">
+    <input type="range" min="0" max="100" value="94" onChange="changeWrapping(event, 'breakword')" style="float:right">
+    <div style="min-width:1em; word-wrap:break-word; resize:both" class="codelike" id="breakword">
     Despite the old adage, smiles is not longer than supercalifragilisticexpialidocious.
     </div>
       <ul class="icons" style="clear: both;">
@@ -1027,7 +1028,11 @@ W = <input type="range" id="width" min="0" max="50" value="34" step="1" onChange
          <li class="opera">Opera 10.5</li>
          <li class="ie">IE 5.5</li>
      </ul>
-    </section>
+    </section><script defer="">
+            function changeWrapping(event, thisid) {
+              document.getElementById(thisid).style.width = event.target.value + '%';
+            }
+          </script>
 </div>  
 
 

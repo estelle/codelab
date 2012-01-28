@@ -237,7 +237,7 @@ body.three-d div.slides {
 			display:block;
 			position:absolute;
 			top: -8px;
-			right:-10px;
+			right:0;
 			background-image:url(../icons/new.gif);
 		}
 		.icons .no {opacity: 0.25;}
