@@ -1,0 +1,1486 @@
+<!doctype html>
+<meta charset="utf-8">
+<html> 
+  <head> 
+    <!--[if gte IE 9]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <![endif]--> 
+    <!--[if lt IE 9]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
+    <![endif]--> 
+    <meta charset="utf-8" />
+    <title>HTML5 &amp; CSS3: The Good Enough Parts</title>
+    <link href="http://fonts.googleapis.com/css?family=Paytone+One:regular" rel="stylesheet" type="text/css" />
+    
+<link rel="stylesheet" media="print" href="../openwebcamp3/print.css"/>  
+<link rel="stylesheet" media="all" href="../openwebcamp3/screen.css"/>  
+<link rel="stylesheet" media="all" href="../openwebcamp3/effects.css"/> 
+<link rel="stylesheet" media="all" href="css/screen.css"/>  
+<link rel="stylesheet" href="http://standardista.com/cssgradients/css/religion.css"/> 
+<style>
+
+body, #presentation, #slides {
+	-webkit-transition: all 1.5s linear;
+	-moz-transition: all 1.5s linear;
+	-ms-transition: all 1.5s linear;
+	-o-transition: all 1.5s linear;
+	transition: all 1.5s linear;	
+}
+@media only screen and (orientation: portrait) {
+	
+	body, #presentation, #slides{
+	background: indianred;
+	}
+}
+@media only screen and (max-width: 480px) {
+	
+	body, #presentation, #slides{
+	background: palegoldenrod;
+	}
+}
+.opacity div i {background: #C7573A;}
+</style>
+</head> 
+<body> 
+
+  
+  <div id="info">
+    <p>Estelle Weyl &middot <a href="http://standardista.com">Standardista.com</a> &middot; <a href="http://www.twitter.com/estellevw">@estellevw</a> &middot;Press <span class="key">&rarr;</span> key to advance.  &middot;Press <span class="key">2</span> for notes.
+    </p>
+  </div>
+  
+  <div id="presentation">
+     
+   <div id="presentation-counter"></div>
+      
+   <div id="slides">
+   
+    
+    
+   
+<!-- intro --> 
+ <div class="slide">
+     <header>
+      <h1>CSS3: A Not So Quick Overview</h1>
+     </header>
+     <p>
+     	<a href="http://www.sitepoint.com/books/htmlcss1/" style="float: right; margin-right: 20px; border:none"><img src="http://www.sitepointstatic.com/images/books/htmlcss1/3dcover-flat.png" alt="HTML5 &amp; CSS3 for the Real World" style="border:none;"></a><a href="http://shop.oreilly.com/product/0636920021711.do" style="border:none"> <img src="../forms/icons/oreilly.gif" alt="Mobile HTML5: Using the Latest Today by Estelle Weyl and Maximiliano Firtman" style="float: left;"></a>
+     </p>
+     <h1 style="clear:both;">Estelle Weyl<br/>
+     	<a href="http://standardista.com">www.standardista.com</a><br>
+        <a href="http://twitter.com/estellevw">@estellevw</a>
+     </h1>  
+    </div>
+  
+<!-- OUTLINE -->
+   
+    <div class="slide intro">
+     <header style="font-size:30px">
+      <h1>Part 1: Selectors </h1>
+      <h1>Part 2: Media Queries</h1>
+      <h1>Part 3. Specificity</h1>
+      <h1>Part 4: Most properties</h1>
+      <h1>Part 5: The funnest stuff</h1>
+     </header>
+    </div>
+    
+    
+<!-- ###################################################################   
+
+	    Part 2: Other CSS3 Properties
+
+     ################################################################### -->
+<div class="slide intro"> 
+<header><h1>Part 4:  CSS3 Properties</h1></header>
+</div>  
+
+<div class="slide"> 
+<header><h1>CSS3 Properties</h1></header> 
+<section class="content columns2"> 
+<ul class="">
+<li>opacity</li>
+<li>colors</li>
+<li>border-radius</li>
+     	<li>text-shadows</li>
+        <li>box-shadow</li>
+     	<li>@font-face</li>
+	<li>box-sizing</li>
+    <li>columns</li>
+    <li>flexible box model</li>
+    <li>grids</li>
+    <li>background properties (multiple, clip, size, 4-positions)</li>
+    <li>border-image</li>
+    <li>text-overflow</li>
+	<li>word-wrap: breakword</li>
+    <li>calc()</li>
+    <li>rem</li>
+    
+       <li style="opacity: 0.3"> Masks</li><li style="opacity: 0.3">
+        Reflections</li><li style="opacity: 0.3">
+        text-stroke</li>
+</ul>
+
+</section>
+</div>
+     
+
+    
+<div class="slide "> 
+     <header><h1>Opacity</h1></header> 
+     <section class="content"> 
+     <ul class="icons" style="clear: both; float:right; width: 120px;">
+         <li class="chrome">Chrome 1</li>
+         <li class="safari">Safari 1.2</li>
+         <li class="firefox">Firefox 0.9</li>
+         <li class="opera">Opera 9</li>
+         <li class="ie new">IE 4* / IE 9</li>
+     </ul>
+     <div class="opacity" style="width: 400px;">
+     
+         <div style="opacity:1;">
+         <i></i><pre contenteditable>opacity: 1;</pre>
+         
+         </div>
+         
+          <div style="opacity:0.75;">
+         <i></i><pre contenteditable>opacity: 0.75;</pre>
+         
+         </div>
+         
+          <div style="opacity:0.5;">
+         <i></i><pre contenteditable>opacity: 0.5;</pre>
+         
+         </div>
+         
+          <div style="opacity:0.25;">
+         <i></i><pre contenteditable>opacity: 0.25;</pre>
+         
+         </div>
+         
+          <div style="opacity:0;">
+         <i></i><pre contenteditable>opacity: 0;</pre>
+         
+         </div>
+     </div>
+     
+     
+     
+     </section>
+</div>
+  
+     
+<div class="slide"> 
+<header><h1>AlphaTransparency</h1></header> 
+<section class="content"> 
+	 <div class="alphatransparency">
+     		<div style="background-color: rgba(58, 103, 171, 1);"></div>
+     		<div style="background-color: rgba(58, 103, 171, 0.75);"></div>
+     		<div style="background-color: rgba(58, 103, 171, 0.5);"></div>
+     		<div style="background-color: rgba(58, 103, 171, 0.25);"></div>
+     		<div style="background-color: rgba(58, 103, 171, 0);"></div>
+    </div>     
+         
+     <div class="rgba opacity">
+         <div style="color: rgba(0, 0, 0, 1); height:100px;">
+         <pre contenteditable>color: rgba(0, 0, 0, 1);<br>background-color: rgba(58, 103, 171, 1);</pre>
+         
+         </div>
+         
+          <div style="color: rgba(0, 0, 0, 0.75); height:100px;"">
+         <pre contenteditable>color: rgba(0, 0, 0, 0.75);<br>background-color: rgba(58, 103, 171, 0.75);</pre>
+         
+         </div>
+         
+          <div style="color: rgba(0, 0, 0, 0.5); height:100px;"">
+         <pre contenteditable>color: rgba(0, 0, 0, 0.5;<br>background-color: rgba(58, 103, 171, 0.5);</pre>
+         
+         </div>
+         
+         <div style="color: rgba(0, 0, 0, 0.25); height:100px;"">
+         <pre contenteditable>color: rgba(0, 0, 0, 0.25);<br>background-color: rgba(58, 103, 171, 0.25);</pre>
+        
+         </div>
+         
+          <div style="color: rgba(0, 0, 0, 0); height:100px;"">
+         <pre contenteditable>color: rgba(0, 0, 0, 0)<br>background-color: rgba(58, 103, 171, 0);</pre>
+         
+         </div>
+     </div>
+     <ul class="icons" style="clear: both;">
+         <li class="chrome">Chrome 1</li>
+         <li class="safari">Safari 1.2</li>
+         <li class="firefox">Firefox 0.9</li>
+         <li class="opera">Opera 9</li>
+         <li class="ie new">IE 9</li>
+     </ul>
+</section>
+</div>
+
+  
+  
+  
+  
+   <div class="slide" id="css-color">
+         
+          <header> <h1>HSLA</h1></header>
+          <section>
+        <pre contenteditable>color:<b>hsla</b>(
+   <span class="hsl-value" id="hsl-h-value">328,</span> 	<input id="hsl-h" type="range" min="0" max="360" value="328" onChange="changeHSL()"> H <div id="hslah">blah</div>
+   <span class="hsl-value" id="hsl-s-value">100%,</span> 	<input id="hsl-s" type="range" min="0" max="100" value="100" onChange="changeHSL()"> S <div id="hslas"></div>
+   <span class="hsl-value" id="hsl-l-value">44%,</span> 	<input id="hsl-l" type="range" min="0" max="100" value="44" onChange="changeHSL()"> L <div id="hslal"></div>
+   <span class="hsl-value" id="hsl-a-value">1.00</span> 	<input id="hsl-a" type="range" min="0" max="100" value="100" onChange="changeHSL()"> A <div id="hslaa"></div>
+);        </pre>
+
+            <div id="hsl-example" class="example" style="color:  hsla(328, 100%, 44%, 1); ">
+              HSLA Colors
+            </div>
+
+            <script defer="">
+			  function createHSLA(h, s, l, a){
+                var h = h || document.getElementById('hsl-h').value * 1.0;
+                var s = s || document.getElementById('hsl-s').value * 1.0;
+                var l = l || document.getElementById('hsl-l').value * 1.0;
+                var a = a ||(document.getElementById('hsl-a').value / 100).toFixed(2);
+				var hslapicker = "";
+				for(var i=0; i <=360; i++){
+					hslapicker+= '<i style="background: hsla(' + i + ', ' + s + '%, ' + l + '%, ' + a +')"></i>';
+			    }
+			//	hslapicker+= '<i style="background: hsla(' + h + ', ' + s + '%, ' + l + '%, ' + a +')" class="big"></i>'
+				document.getElementById('hslah').innerHTML = hslapicker;
+				
+				document.getElementById('hslas').style.background = 
+                    '-webkit-linear-gradient(0deg, hsl('+h+', 0%, '+ l +'%) 0%, hsl('+h+', 100%, '+ l +'%) 100%)';
+				document.getElementById('hslal').style.background = 
+                    '-webkit-linear-gradient(0deg, hsla('+h+', '+ s +'%, 0%, 1) 0%, hsla('+h+', '+ s +'%, 50%, 1) 50%,  hsla('+h+', '+ s +'%, 100%, 1) 100%)';
+				document.getElementById('hslaa').style.background = 
+                    '-webkit-linear-gradient(0deg, hsla('+h+', '+ s +'%, '+l+'%, 0) 0%, hsla('+h+', '+ s +'%, '+l+'%, 1) 100%)';
+			  }
+			  
+              function changeHSL() {
+                var h = document.getElementById('hsl-h').value * 1.0;
+                var s = document.getElementById('hsl-s').value * 1.0;
+                var l = document.getElementById('hsl-l').value * 1.0;
+                var a = (document.getElementById('hsl-a').value / 100).toFixed(2);
+                var el = document.getElementById('hsl-example');
+
+                el.style.color = 'hsla(' + h + ', ' + s + '%, ' + l + '%, ' + a + ')';
+
+                document.getElementById('hsl-h-value').textContent = h + ',';
+                document.getElementById('hsl-s-value').textContent = s + '%,';
+                document.getElementById('hsl-l-value').textContent = l + '%,';
+                document.getElementById('hsl-a-value').textContent = a + '';
+				createHSLA(h, s, l, a);
+              }
+
+              changeHSL();
+			  createHSLA();
+            </script>
+          </section>
+        <span class="counter"></span></div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+     
+ 
+<div class="slide"> 
+<header><h1>AlphaTransparency Tips</h1></header> 
+<section class="content">
+<ul>
+<li>Used in RGBA &amp; HSLA colors 
+<pre contenteditable>
+rgba(58, 103, 171, 0.5);
+hsla(216, 49%, 45%, 0.5);
+</pre>
+</li>
+<li class="angled" style="padding-right: 10px;"><span style="text-shadow: 0 21px 1px  rgba(0,0,0,0.3);">Transparent Shadows</span>
+<pre contenteditable style="box-shadow: -10px 10px rgba(0,0,0,0.3); margin-left: 20px;">
+.trans { box-shadow: -10px 10px rgba(0,0,0,0.3);
+         text-shadow: 0 21px 1px rgba(0,0,0,0.3);}</pre></li>
+<li class="angled" style="padding-right: 10px;"><span style="text-shadow: 0 21px 1px  #666">Solid Shadows</span>
+
+<pre contenteditable style="box-shadow:  -10px 10px  #999; margin-left: 20px;"">
+.solid { box-shadow: -10px 10px #999;
+         text-shadow: 0 21px 1px #999;}</pre></li>
+</ul>
+</section>
+</div>
+     
+
+ 
+<div class="slide"> 
+<header><h1>border-radius</h1></header> 
+<section class="content"> 
+<p>Border on slides, code &amp; showflakes</p>
+<div class="opacity radius">
+	<div>
+    <i style="border-radius: 0"></i> <pre contenteditable>border-radius: 0;</pre> <b></b>
+    </div>
+    <div>
+    <i style="border-radius: 20px"></i><pre contenteditable>border-radius: 20px;</pre><b style="border-radius: 20px"></b>
+    </div>
+    <div>
+    <i style="border-radius: 50%"></i><pre contenteditable>border-radius: 50%;</pre><b style="border-radius: 50%"></b>
+    </div>
+</div>
+ <ul class="icons" style="clear: both;">
+         <li class="chrome">Chrome / Chrome 4</li>
+         <li class="safari">Safari 3 / Safari 5</li>
+         <li class="firefox">Firefox 1 / Firefox 4</li>
+         <li class="opera">  <br/> Opera 10.5</li>
+         <li class="ie new">  <br/> IE 9</li>
+     </ul>
+     <p class="note">% works correctly since Safari 5.1 and FF 4.0</p>
+</section>
+</div>
+     
+     
+ 
+<div class="slide"> 
+<header><h1>border-radius</h1></header> 
+<section class="content">
+<div class="opacity radius">
+	<div><pre contenteditable>.circle {border-radius: 50%;}</pre> <b style="border-radius: 50%;"></b></div>
+	<div><pre contenteditable>.oval { border-radius: 50%;}</pre> <b style="border-radius: 50%; width: 200px;"></b></div> 
+	<div><pre contenteditable>.different { border-radius: 10px 30px;}</pre> <b style="border-radius: 10px 30px; "></b></div> 
+	<div><pre contenteditable>.elliptical { border-radius: 10px / 30px;}</pre> <b style="border-radius: 10px / 30px;"></b></div>   
+ </div>
+  
+</section>
+</div>
+   
+     
+<div class="slide"> 
+<header><h1>Text &amp; Box Shadows</h1></header> 
+<section class="content">
+<ul>
+<li>
+<pre contenteditable>
+box-shadow: (inset) left top blur spread color;
+text-shadow: left top blur spread color;
+</pre>
+</li>
+<li class="angled" style="padding-right: 10px;"><span style="text-shadow: 0 21px 1px  rgba(0,0,0,0.3);">Transparent Shadows</span>
+<pre contenteditable style="box-shadow: -10px 10px rgba(0,0,0,0.3); margin-left: 20px;">
+.trans { box-shadow: -10px 10px rgba(0,0,0,0.3);
+         text-shadow: 0 21px 1px rgba(0,0,0,0.3);}</pre></li>
+<li class="angled" style="padding-right: 10px;"><span style="text-shadow: 0 21px 1px  #666">Solid Shadows</span>
+
+<pre contenteditable style="box-shadow:  -10px 10px  #999; margin-left: 20px;"">
+.solid { box-shadow: -10px 10px #999;
+         text-shadow: 0 21px 1px #999;}</pre></li>
+</ul>
+</section>
+</div>
+     
+ <div class="slide"> 
+<section class="content"> 
+<h1 class="textshadow">Text Shadow</h1>
+<pre contenteditable>.textshadow {
+    text-shadow: 
+    0 1px #cccccc, 	
+    0 2px #c9c9c9, 
+    0 3px #bbbbbb, 
+    0 4px #b9b9b9, 
+    0 5px #aaaaaa, 
+    0 6px  1px  rgba(0, 0, 0, 0.1), 
+    0 0    5px  rgba(0, 0, 0, 0.1), 
+    0 1px  3px  rgba(0, 0, 0, 0.3), 
+    0 3px  5px  rgba(0, 0, 0, 0.2), 
+    0 5px  10px rgba(0, 0, 0, 0.25), 
+    0 10px 10px rgba(0, 0, 0, 0.2), 
+    0 20px 20px rgba(0, 0, 0, 0.15);
+}</pre>
+ <ul class="icons">
+         <li class="chrome">Chrome</li>
+         <li class="safari">Safari</li>
+         <li class="firefox">Firefox 3.5</li>
+         <li class="opera new">Opera 9.5</li>
+         <li class="ie bad">IE 10?</li>
+     </ul>
+</section>
+</div>
+     
+<div class="slide"> 
+<header><h1>text-shadow</h1></header> 
+<section class="content">
+<p>Syntax</p>
+<pre contenteditable>text-shadow:  0 2px 5px hsla(0, 0%, 0%, 0.2);
+text-shadow: [horiz] [vert] [blur] [color];</pre> 
+<ul>
+	<li>Example from Paul Irish's <a href="http://mothereffingtextshadow.com/">MotherEffingTextShadow</a></li>
+	<li>John Allsop's <a href="http://westciv.com/tools/shadows/">text-shadow tool</a></li>
+</ul>
+</section>
+</div>    
+      
+ 
+<div class="slide"> 
+<header><h1>box-shadow</h1></header> 
+<section class="content boxshadow"> 
+<b style="float:right; position:relative; top: 20px; right: 20px;"></b><pre contenteditable>
+box-shadow:  
+    inset 3px -3px 0 3px green, 
+    inset -3px 3px 0 3px yellow,
+    3px 3px 0 3px blue, 
+    -3px -3px 0 3px magenta; 
+box-shadow: 
+    inset? [horiz] [vert] [blur] [spread] [color];
+</pre>
+<ul class="notes">
+<li>Last shadow drawn 'first', under previous shadow</li>
+<li>Should still be prefixed for best support</li>
+</ul>
+<ul class="icons" style="clear: both;">
+         <li class="chrome">Chrome / Chrome 10</li>
+         <li class="safari">Safari 3 / Safari 5.1</li>
+         <li class="firefox">Firefox 3.5 / Firefox 4.0</li>
+         <li class="opera">Opera 9 / Opera 10.5</li>
+         <li class="ie new"> <br/>IE 9</li>
+     </ul>
+</section>
+</div>   
+      
+ 
+<div class="slide"> 
+<header><h1>@font-face</h1></header> 
+<section class="content"> 
+<pre contenteditable>
+@font-face {
+    font-family: 'ChalkdusterRegular';
+    src: url('chalkduster-webfont.eot');
+    src: url('chalkduster-webfont.eot?#iefix') format('embedded-opentype'),
+         url('chalkduster-webfont.woff') format('woff'),
+         url('chalkduster-webfont.ttf') format('truetype'),
+         url('chalkduster-webfont.svg#ChalkdusterRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+</pre>
+<pre contenteditable>body {
+	font-family: 'ChalkdusterRegular';
+}</pre>
+ <ul>
+    	<li><a href="http://www.fontsquirrel.com/fontface/generator">FontSquirrel @font-face generator</a></li>
+    </ul>
+</section>
+</div>
+     
+ <div class="slide"> 
+<header><h1>@font-face</h1></header> 
+<section class="content">
+<pre contenteditable>@font-face {
+  font-family: yourFontName;
+  src: url(fontfile) [, url(fontfile)]*;
+  [font-weight: bold|normal];
+  [font-style: italic|normal];
+  [charset: characterSet;]
+}</pre>
+
+<table class="fontfamily" cellspacing="0"><thead class="icons">
+	<tr>
+    <th>File</th>
+    <th><span class="chrome browser">Chrome</span></th>
+    <th><span  class="firefox browser">Firefox</span></th>
+    <th><span  class="opera browser">Opera</span></th>
+    <th><span  class="safari browser">Safari</span></th>
+    <th><span  class="ie browser">Internet Explorer</span></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    	<th>EOT</th>
+        <td>&Chi;</td>
+        <td>&Chi;</td>
+        <td>&Chi;</td>
+        <td>&Chi;</td>
+        <td>✓</td>
+    </tr>
+    <tr>
+    	<th>TTF/OTF</th>
+        <td>✓</td>
+        <td>✓ (3.5+)</td>
+        <td>✓ (10+)</td>
+        <td>✓ (iOS 4.2)</td>
+        <td>(9)</td>
+    </tr>
+    <tr>
+    	<th>SVG</th>
+        <td>✓</td>
+        <td>&Chi;</td>
+        <td>✓</td>
+        <td>✓</td>
+        <td></td>
+    </tr>
+    <tr>
+    	<th>WOFF</th>
+        <td>✓ (5+)</td>
+        <td>✓ (3.6+)</td>
+        <td>✓ (11.1+)</td>
+        <td>✓ (5.1)</td>
+        <td>✓ (9)</td>
+    </tr>
+    
+    </tbody>
+    </table>
+    
+    <ul>
+		<li><a href="">Google fonts</a></li>
+    </ul>
+</section>
+</div>    
+ 
+
+     
+     
+<div class="slide" id="columnpage">
+          <header> <h1>Columns</h1></header>
+          <section class="content">
+          <pre contenteditable>
+<u></u>column-count: <span id="colcnt">1</span>;      <input id="columncounts" type="range" min="1" max="6" value="2" onChange="changeColumnNoSlider(event)">
+<u></u>column-width: <span id="colwidth">10</span>em;   <input id="columnwidth" type="range" min="5" max="40" step="1" value="10" onChange="changeColumnNoSlider(event)">
+<u></u>column-rule: 1px solid #bbb;
+<u></u>column-gap: <span id="colgap">2</span>em;      <input id="columngaps" type="range" min="0" max="10" step="0.1" value="2" onChange="changeColumnNoSlider(event)"></pre>
+
+            <div id="columnsslide" class="example">
+              <p>Adipisicing rump nostrud exercitation turkey, bresaola deserunt ullamco beef ribs pork loin ball tip pig pork belly nisi. Cillum sunt officia deserunt, beef aliqua ham ut t-bone sed ut consequat shoulder. Nostrud excepteur biltong non, fatback salami incididunt beef cupidatat occaecat. </p>
+              <p>Reprehenderit ham hock labore tri-tip chuck, excepteur ut. Meatball sint enim beef ribs, mollit laborum flank commodo fatback pariatur tail rump eiusmod spare ribs dolore. Ut minim qui, tongue eu short ribs pancetta excepteur incididunt culpa consequat pastrami magna chuck. Flank sunt sint, occaecat ut adipisicing labore turkey laboris in magna.</p>
+
+<p>Chicken bacon meatloaf minim meatball salami sunt spare ribs.</p><p> Bacon sed tail, pork loin pariatur meatloaf hamburger exercitation corned beef shank ex esse sirloin qui beef ribs. Consectetur anim corned beef, cupidatat ex enim tempor. Pariatur consectetur ad, enim ut quis consequat aliquip exercitation jowl tenderloin ham dolore. </p><p>Fugiat excepteur aliqua, cow dolor swine shoulder elit tri-tip shankle. Irure consectetur cow labore, cupidatat exercitation ea jerky ham officia dolore tongue eu aliqua. Ham hock irure beef ribs non, flank sausage eiusmod ham short loin nostrud.
+</p>
+            </div>
+
+<ul class="icons">
+         <li class="chrome">Chrome</li>
+         <li class="safari">Safari 3.1</li>
+         <li class="firefox">Firefox 2</li>
+         <li class="opera">Opera 11</li>
+         <li class="ie new">IE 10</li>
+         <li class="txt"><span onClick="vendorPrefix('w', 'columnpage')">-webkit-</span><span onClick="vendorPrefix('r', 'columnpage')"> and </span> <span onClick="vendorPrefix('m', 'columnpage')">-moz-</span>required</li>
+     </ul>
+          </section>
+
+          <script defer="">
+            function changeColumnNoSlider(event) {
+			  var columngaps = roundNumber(document.getElementById('columngaps').value, 1);
+			  var columnwidth = document.getElementById('columnwidth').value;
+              var count =  document.getElementById('columncounts').value;
+              document.getElementById('colgap').textContent = columngaps;
+              document.getElementById('colwidth').textContent = columnwidth;
+              document.getElementById('colcnt').textContent = count;
+              var example = document.getElementById('columnsslide');
+              example.style.webkitColumnCount = count;
+              example.style.MozColumnCount = count;
+              example.style.webkitColumnGap = columngaps + "em";
+              example.style.MozColumnGap = columngaps + "em";
+              example.style.webkitColumnWidth = columnwidth + "em";
+              example.style.MozColumnWidth = columnwidth + "em";
+            }
+			function roundNumber(num, dec) {
+				var result = Math.round(num*Math.pow(10,dec))/Math.pow(10,dec);
+				return result;
+			}
+          </script>
+</div>     
+
+<div class="slide">
+	<header><h1>box-sizing</h1></header>
+    <section class="content">
+    <pre contenteditable>box-sizing: content-box | border-box</pre>
+    <div class="boxsizing"><div>content-box</div></div>
+    <div class="boxsizing"><div class="bb">border-box</div></div>
+<pre contenteditable style="float:left; margin-top:0;">div {
+width: 200px; 
+height:100px; 
+padding: 20px;
+margin:20px;
+border-width: 5px;
+}
+</pre>
+
+    <div class="boxsizing"><div class="bb">border-box</div></div>
+<div style="float:left"><ul><li style="list-style-type:none;">-webkit- Safari 5 and older</li>
+<li style="list-style-type:none;">-moz- for all Firefox versions</li></ul>
+ <ul class="icons">
+         <li class="chrome">Chrome</li>
+         <li class="safari">Safari 3.1/5.1</li>
+         <li class="firefox">Firefox 2/8</li>
+         <li class="opera">Opera 9.5</li>
+         <li class="ie">IE 8</li>
+     </ul> 
+</div>
+<p class="notes" style="clear:both">border-box replicates the old IE box model</p>
+    </section>
+</div>  
+
+
+
+ <div class="slide">
+	<header><h1>Flexible Box Model</h1></header>
+    <section class="content">
+    <p>Used to position horizontal and vertical stacks.</p>
+<pre contenteditable style="float: left; margin: 0 10px 0 0;">.box {
+  display: box;
+  box-orient:<select onChange="changeBoxOrient(event)">&nbsp;&nbsp; &nbsp; &nbsp; <option>horizontal</option> &nbsp; &nbsp; &nbsp; <option>vertical</option> &nbsp; &nbsp; </select>;
+}
+.box .one, .box .two {
+  box-flex: 1;
+}
+.box .three {
+  box-flex: 3;
+}</pre>   <ul class="icons" style="float: left;">
+         <li class="chrome half">Chrome</li>
+         <li class="safari half">Safari 3.1</li>
+         <li class="firefox half">Firefox 2</li>
+         <li class="opera bad">Opera 12</li>
+         <li class="ie new half">IE 10</li>
+         <li class="txt">-webkit-, -moz-, -ms- required</li>
+     </ul>
+
+          <div id="box-orient-example" class="example">
+            <div>
+              Box one
+            </div> 
+            <div>
+              Box two
+            </div> 
+            <div>
+              Box three
+            </div> 
+          </div>
+
+          <script defer=""> 
+            function changeBoxOrient(event) {
+              var el = document.getElementById('box-orient-example');
+              el.style.webkitBoxOrient = event.target.value;
+              el.style.MozBoxOrient = event.target.value; 
+            }
+          </script>  
+  
+    </section>
+</div>  
+
+
+
+<div class="slide">
+	<header><h1>Flexible Box Model</h1></header>
+    <section class="content">
+<pre contenteditable>.box {
+  display: <b>box</b>;
+  box-pack: <select onChange="changeBoxPack(event)"><option>center</option>
+    <option>start</option> 
+    <option>end</option> </select>;
+  box-align: <select onChange="changeBoxAlign(event)"><option>center</option><option>start</option><option>end</option><option>stretch</option></select>;
+}</pre> 
+
+            <div id="box-orient-example-2" class="example">
+              <textarea>change the dropdowns and resize this &lt;textarea&gt;</textarea> 
+            </div>
+
+            <script defer=""> 
+              function changeBoxPack(event) {
+                var el = document.getElementById('box-orient-example-2');
+                el.style.webkitBoxPack = event.target.value;
+                el.style.MozBoxPack = event.target.value; 
+              }
+              function changeBoxAlign(event) {
+                var el = document.getElementById('box-orient-example-2');
+                el.style.webkitBoxAlign = event.target.value;
+                el.style.MozBoxAlign = event.target.value; 
+              }
+            </script> 
+
+    </section>
+</div>
+
+<div class="slide">
+	<header><h1>Old FlexBox Properties</h1></header>
+    <section class="content"> 
+<pre contenteditable class="new">display: box ;</pre>
+
+<pre contenteditable><b>box-orient:</b>  <strong>horizontal</strong> | vertical | inherit;
+      
+<b>box-pack:</b> <strong>start</strong> | end | center | justify;
+
+<b>box-align:</b> start | end | center | baseline | <strong>stretch</strong>;
+
+<b>box-flex:</b> integer | <strong>0</strong>;
+
+<span style="opacity: 0.4"><b>box-flex-group</b>
+
+<b>box-ordinal-group</b>
+
+<b>box-direction</b>: normal | reverse | inherit;
+
+<b>box-lines</b>:</span>
+</pre>
+<ul style="clear:both;"><li><a href="http://www.html5rocks.com/en/tutorials/flexbox/quick/">Quick tutorial</a></li><li><a href="http://msdn.microsoft.com/en-us/ie/hh272902#_CSSFlexBox">IE 10 Support</a></li></ul>
+    </section>
+</div>  
+
+<div class="slide">
+	<header><h1>New FlexBox Properties</h1></header>
+    <section class="content"> 
+<pre contenteditable class="new">display: flexbox | inline-flexbox;</pre>
+
+<pre contenteditable><b>flex-direction</b>: lr | rl | tb | bt | <strong>inline</strong> | 
+    inline-reverse | block | block-reverse</span>
+
+<b>flex-order:</b> integer | <strong>1</strong>;</span>
+      
+<b>flex-pack:</b> <strong>start</strong> | end | center | justify;
+
+<b>flex-align:</b> <strong>auto</strong> | baseline;
+</pre>
+<ul class="icons" style="float:left">
+         <li class="chrome bad">Chrome 14</li>
+         <li class="safari bad">Safari 5.1</li>
+         <li class="firefox bad">Firefox 7</li>
+         <li class="opera bad">Opera 12</li>
+         <li class="ie bad">IE 10</li>
+         <li class="txt">so far no support</li>
+     </ul>
+     <p style="float:left"><a href="http://www.w3.org/TR/css3-flexbox/">W3C specs</a></p>
+     <p style="clear: both;" class="notes">The spec syntax changed drastically.  Chrome is currently changing over. Other browsers have it on their plans.</p>
+    </section>
+</div>  
+
+<div class="slide" id="gridlayout">
+	<header><h1>grid layout</h1></header>
+    <section class="content">
+    <p>Using grid system to lay out content, dividing available space into columns and rows</p>
+    <pre contenteditable style="float: right; margin: 0 0 0 20px"><u></u>grid-columns:
+<u></u>grid-rows:
+<u></u>grid-column:
+<u></u>grid-row:
+<u></u>grid-cell:
+<u></u>grid-cell-stacking:
+<u></u>grid-template:
+<u></u>grid-column-span:
+<u></u>grid-row-span:
+<u></u>grid-column-sizing:
+<u></u>grid-row-sizing:
+<u></u>grig-flow:
+<u></u>grid-column-align:
+<u></u>grid-row-align:
+<u></u>grid-layer:
+</pre>
+<div style="float:left; width: 480px; margin-right: -40px">
+
+<p style="font-size: 18px;"><a href="http://www.w3.org/TR/css3-grid-layout/">W3C Specifications</a></p>
+    <pre contenteditable>display: <u></u>grid | <u></u>inline-grid </pre>
+    
+    <ul class="icons">
+         <li class="chrome bad">Chrome</li>
+         <li class="safari bad">Safari 3.1</li>
+         <li class="firefox bad">Firefox 2</li>
+         <li class="opera bad">Opera 12</li>
+         <li class="ie new">IE 10</li>
+         <li class="txt"><span onClick="vendorPrefix('ms', 'gridlayout')">-ms-</span> required</li>
+     </ul>
+</div>
+    </section>
+</div>
+
+   
+
+ <div class="slide">
+	<header><h1>background properties</h1></header>
+    <section class="content">
+    <p>Avoid &lsquo;background&rsquo; because it resets everything!</p>
+<pre contenteditable style="font-size: 110%; line-height: 1.6;">background-color: transparent;
+background-image: none;
+background-<b>position</b>: 0 0;
+background-<b>size</b>: auto;
+background-repeat: repeat;
+background-<b>clip</b>: border-box;
+background-<b>origin</b>: padding-box;
+background-attachment: scroll;</pre>
+    </section>
+</div>  
+
+ <div class="slide">
+	<header><h1>background-position</h1></header>
+    <section class="content">
+    <p>Can now set 4-value position!</p>
+    <pre contenteditable>background-position: bottom 20px right 20px; </pre>
+    <p><a href="http://jsfiddle.net/estelle/wja5m/6/">Example</a>
+      <ul class="icons">
+         <li class="chrome bad">Chrome 14</li>
+         <li class="safari bad">Safari 5.1</li>
+         <li class="firefox bad">Firefox 7</li>
+         <li class="opera">Opera 11</li>
+         <li class="ie bad">IE 10</li>
+     </ul>
+    </section>
+</div>  
+
+<div class="slide" id="bgsize">
+	<header><h1>background-size</h1></header>
+    <section class="content">
+    <pre contenteditable><b><u></u>background-size</b>: <strong>auto</strong> | contain | cover | <span id="actualsize">&lt;length&gt;</span></pre>
+    <div id="bcksizeexample" class="inverse1">
+    <input type="range" min="3" max="30" step="1" value="15" id="bcksizechange" onChange="changeBackSide(this)" style="position:relative; top: -30px;"/>
+    </div><ul>
+    	<li>Use for creating gradients backgrounds</li>
+        <li>Needed for hiDPI images</li>
+        <li>&lsquo;contain&rsquo; grows/shrinks to fully fit</li>
+        <li>&lsquo;cover&rsquo; grows to min size that covers 100% of height &amp; width</li>
+    </ul>
+     <ul class="icons">
+         <li class="chrome">Chrome</li>
+         <li class="safari"><span onClick="vendorPrefix('r', 'bgsize')">Safari</span></li>
+         <li class="firefox">Firefox 4</li>
+         <li class="opera">Opera 11</li>
+         <li class="ie new">IE 9</li>
+         <li class="txt">add <span onClick="vendorPrefix('m', 'bgsize')">-moz-</span> for FF 3.6 and earlier</li>
+     </ul>
+    </section>
+    <script defer>
+    function changeBackSide(event) {
+			  var backsize = event.value;
+			  var image = document.getElementById('bcksizeexample');
+              image.style.backgroundSize = backsize + "px " + backsize + "px, " + backsize + "px " + backsize + "px, 100% 100%"   ;
+			  document.getElementById('actualsize').innerHTML = "<b>"+ backsize +"px " +  backsize +"px</b>;";
+			  
+            }
+	</script>
+</div>  
+
+<div class="slide" id="bgclip">
+	<header><h1>background-clip</h1></header>
+    <section class="content">
+    <pre contenteditable><b><u></u>background-clip</b>: border-box | padding-box | content-box</pre>
+    
+    <div style="background-clip: content-box;" class="backgroundclip">content-box</div>
+    <div style="background-clip: padding-box;" class="backgroundclip">padding-box</div>
+    <div style="background-clip: border-box;" class="backgroundclip">border-box</div>
+     <ul class="icons">
+         <li class="chrome">Chrome</li>
+         <li class="safari"><span onClick="vendorPrefix('r', 'bgsize')">Safari</span></li>
+         <li class="firefox">Firefox 4</li>
+         <li class="opera">Opera</li>
+         <li class="ie new">IE 9</li>
+         <li class="txt">add <span onClick="vendorPrefix('m', 'bgclip')">-moz-</span> for FF 3.6 and earlier</li>
+     </ul>
+    </section>
+</div> <div class="slide" id="bgorigin">
+	<header><h1>background-origin</h1></header>
+    <section class="content">
+    
+    <pre contenteditable><b><u></u>background-origin</b>: border-box | padding-box | content-box</pre>
+    <div style="background-origin: content-box;" class="backgroundclip bradybunch">content-box</div>
+    <div style="background-origin: padding-box;" class="backgroundclip bradybunch">padding-box</div>
+    <div style="background-origin: border-box;" class="backgroundclip bradybunch">border-box</div>
+     <ul class="icons">
+         <li class="chrome"><span onClick="vendorPrefix('r', 'bgorigin')">Chrome</span></li>
+         <li class="safari">Safari 5.1</li>
+         <li class="firefox">Firefox 4</li>
+         <li class="opera">Opera</li>
+         <li class="ie new">IE 9</li>
+         <li class="txt">add <span onClick="vendorPrefix('m', 'bgorigin')">-moz-</span> for FF 3.6, <span onClick="vendorPrefix('w', 'bgorigin')">-webkit-</span> for Safari 5</li>
+     </ul>
+    </section>
+</div> 
+
+<div class="slide">
+	<header><h1>background property resources</h1></header>
+    <section class="content">
+    <ul>
+    <li><a href="http://www.standardista.com/css3/css3-background-properties">Border properties &amp; browser support</a></li>
+    </ul>
+    <pre>background: 
+ img position / size repeat attachment origin clip, 
+ img position / size repeat attachment box{1,2} bgcolor;    </pre>
+<pre>background: 
+ url(topImg.jpg) 0 0 / 30px 30px repeat scroll border-box content-box, 
+ url(botImg.jpg) 15px 15px / 30px 30px fixed border-box #609;</pre>
+   <p class="notes">If one &lsquo;box&rsquo; value is present then it sets both 'background-origin' and 'background-clip' to that value. If two values are present, then the first sets 'background-origin' and the second 'background-clip'</p>
+    </section>
+    </div>
+
+<div class="slide">
+	<header><h1>border-image</h1></header>
+    <section class="content">
+<pre contenteditable><b>border-image</b>: source || slice / width / outset  || repeat;</pre>
+    <ul class="icons" style="clear: both;">
+         <li class="chrome">Chrome</li>
+         <li class="safari">Safari 3.1</li>
+         <li class="firefox">Firefox 3.5</li>
+         <li class="opera">Opera 10.5</li>
+         <li class="ie bad">IE 10?</li>
+     </ul> 
+    <li>All vendor prefixed</li>    
+    <li><a href="http://border-image.com/">Border image tool</a></li>
+    <li><a href="http://www.sitepoint.com/css3-border-image/">border-image tutorial</a></li>
+    <li><a href="http://www.standardista.com/css3/css3-border-properties">border-image browser support</a></li>
+    </section>
+</div>  
+
+
+
+<div class="slide">
+	<header><h1>border-image</h1></header>
+    <section class="content">	
+<pre contenteditable>
+<b>border-image-source</b>: <strong>none</strong> | url() | &lt;image>
+
+<b>border-image-slice</b>: &lt;number> | XX% {1,4} &amp;&amp; fill
+
+<b>border-image-width</b>: &lt;length> | XX% | &lt;number> | <strong>1</strong> | auto {1,4}
+
+<b>border-image-outset</b>: &lt;length> | &lt;number> {1,4}	
+
+<b>border-image-repeat</b>: <strong>stretch</strong> | repeat | round {1,2}		
+	
+</pre>	
+<pre contenteditable style="float:right; margin-bottom:40px;">
+S = <input type="range" id="slice" min="0" max="50" value="34" step="1" onChange="changeBorderImage();">
+W = <input type="range" id="width" min="0" max="50" value="34" step="1" onChange="changeBorderImage();">
+<select id="repeat" onChange="changeBorderImage();"><option value="stretch" selected>stretch</option><option value="repeat">repeat</option><option value="round">round</option></select> </pre> 
+
+<div id="boderimage"></div> 
+
+ 
+<pre contenteditable style="clear:both;">border-image: url(gradient.png) <b id="sliceval">34</b> / <b id="widthval">34</b><b>px</b> <b id="repeatval">stretch</b>;</section>
+</section>
+<script defer>
+	function changeBorderImage(){
+		var slice = document.getElementById('slice').value;
+		var width = document.getElementById('width').value;
+		var repeat = document.getElementById('repeat');
+		repeat = repeat.options[repeat.selectedIndex].text;
+		document.getElementById('boderimage').style.webkitBorderImage = "url(http://standardista.com/articles/gradient.png) " + slice + "/" + width + "px " + repeat;
+		document.getElementById('boderimage').style.mozBorderImage = "url(http://standardista.com/articles/gradient.png) " + slice + "/" + width + "px " + repeat;
+		document.getElementById('sliceval').innerHTML = slice;
+		document.getElementById('widthval').innerHTML = width;
+		
+		document.getElementById('repeatval').innerHTML = repeat;
+	}
+</script>
+</div>  
+
+
+
+
+
+
+<div class="slide">
+	<header><h1>text-overflow: ellipsis</h1></header>
+    <section class="content"><style>
+            .textwrap{width: 94%; height: 1.1em; 
+ height: 1.1em; overflow: hidden; line-height: 1.1em; margin:0.2em 0}
+          </style>
+          <section>
+            <pre contenteditable>p {
+  text-overflow: ellipsis; <input type="range" min="0" max="100" value="94" onChange="changeWrapping(event)" style="float:right">
+  white-space: nowrap;
+  overflow: hidden;
+}</pre>
+
+            <div id="textwraps">
+              <p class="textwrap codelike">
+                overflow-hidden only: Play with the slider to see what happens at the end of the line
+              </p>
+              <p style=" white-space:nowrap" class="textwrap codelike">
+                white-space: nowrap, overflow: hidden: Play with the slider to see what happens at the end of the line
+              </p>
+              <p style="text-overflow: ellipsis;  white-space: nowrap; " class="textwrap codelike">
+                text-overflow: ellipsis;  white-space: nowrap; and overflow: hidden: Play with the slider to see what happens at the end of the line
+              </p>
+            </div>
+            <p class="notes">Needs nowrap and overflow:hidden (anything other than visible) to work.<br>
+ Prefixed in Opera 9 and Opera 10.</p>
+  <ul class="icons" style="clear: both;">
+         <li class="chrome">Chrome</li>
+         <li class="safari">Safari</li>
+         <li class="firefox new">Firefox 7</li>
+         <li class="opera">Opera 11</li>
+         <li class="ie">IE 6</li>
+     </ul>          
+          </section>
+
+          <script defer="">
+            function changeWrapping(event) {
+              document.getElementById('textwraps').style.width = event.target.value + '%';
+            }
+          </script>
+    </section>
+</div> 
+
+<div class="slide">
+	<header><h1>word-wrap: breakword</h1></header>
+    <section class="content">
+    <pre contenteditable>word-wrap:  normal | break-word</pre>
+    <div style="width: 15em; word-wrap:break-word;" class="codelike">
+    Despite the old adage, smiles is not longer than supercalifragilisticexpialidocious.
+    </div>
+      <ul class="icons" style="clear: both;">
+         <li class="chrome">Chrome 1</li>
+         <li class="safari">Safari 1</li>
+         <li class="firefox">Firefox 3.5</li>
+         <li class="opera">Opera 10.5</li>
+         <li class="ie">IE 5.5</li>
+     </ul>
+    </section>
+</div>  
+
+
+<div class="slide">
+	<header><h1>calc()</h1></header>
+    <section class="content">
+    <ul class="icons" style="clear: both;">
+         <li class="chrome bad">Chrome</li>
+         <li class="safari bad">Safari</li>
+         <li class="firefox new">Firefox 4</li>
+         <li class="opera bad">Opera 11</li>
+         <li class="ie new">IE 9</li>
+     </ul>
+<pre contenteditable>.colA {
+  width:50%;
+  margin-right: 1em;
+}
+.colB {
+  width: -moz-calc(50% - 1em);
+}</pre>
+     <ul>
+        <li>+, -, *, /, mod, min, and max operators.</li>
+     	<li>Vendor prefixed in Firefox</li>
+     	<li>Not yet ready for production</li>
+        <li><a href="http://hacks.mozilla.org/2010/06/css3-calc/">Intro to calc()</a></li>
+        </ul> 
+    </section>
+</div>  
+
+<div class="slide">
+	<header><h1>rem</h1></header>
+    <section class="content">
+    <pre contenteditable>html { 
+    font-size: 62.5%; 
+} 
+p { 
+    font-size: 13px; 
+    font-size: 1.3rem; 
+} 
+small { 
+    font-size: 11px; 
+    font-size: 1.1rem; 
+}</pre>
+    
+    <ul class="icons" style="clear: both;">
+         <li class="chrome">Chrome 6</li>
+         <li class="safari">Safari 5</li>
+         <li class="firefox">Firefox 3.6</li>
+         <li class="opera bad">Opera 12?</li>
+         <li class="ie new">IE 9</li>
+     </ul>
+     <ul>
+       <li><a href="http://snook.ca/archives/html_and_css/font-size-with-rem">Article on rem</a></li><li><a href="http://www.standardista.com/css3/css-values-lengths-times-frequenc-angles">Article on units of measurement</a></li></ul>
+     
+    </section>
+</div>
+     
+ <div class="slide intro"> 
+     <header><h1>Part 5: The fun stuff</h1></header>
+    <h1><a href="part5.html">Next ➹</a></h1>
+</div>
+    
+   <div class="slide intro"> 
+     <header><h1>Thank you</h1></header>
+     <section class="content"> 
+     <a href="http://www.sitepoint.com/books/htmlcss1/" style="float: right; margin-right: 20px; border:none"><img src="http://www.sitepointstatic.com/images/books/htmlcss1/3dcover-flat.png" alt="HTML5 &amp; CSS3 for the Real World" style="border:none;"></a>
+            <p>Estelle Weyl</p>
+            <p><a href="http://standardista.com">www.standardista.com</a></p>
+            <p><a href="http://twitter.com/estellevw">@estellevw</a></p>     
+     </section>
+    </div>   
+   </div>
+   
+  </div>
+ 
+ 
+<!-- ###################################################################   
+
+	    END
+
+     ################################################################### --> 
+<script>
+function vendorPrefix(prefix, id){
+	  var prefixTxt = '-ms-';
+		switch (prefix){
+			case 'w':
+				prefixTxt = '-webkit-';
+			break;
+			case 'm':
+				prefixTxt = '-moz-';
+			break;
+			case 'ms':
+				prefixTxt = '-ms-';
+			break;	
+			case 'o':
+				prefixTxt = '-o-';
+			break;
+			case 'r':
+				prefixTxt = '';
+			break;
+		};
+	  var spans = document.getElementById(id).querySelectorAll('u');
+	  for(var i = 0, j = spans.length; i < j; i++ ){
+	  	spans[i].innerHTML = prefixTxt;
+	  }
+			
+	}
+	
+	
+  (function() {
+  var doc = document;
+  var disableBuilds = true;
+
+  var ctr = 0;
+  var spaces = /\s+/, a1 = [''];
+
+  var toArray = function(list) {
+    return Array.prototype.slice.call(list || [], 0);
+  };
+
+  var byId = function(id) {
+    if (typeof id == 'string') { return doc.getElementById(id); }
+    return id;
+  };
+
+  var query = function(query, root) {
+    if (!query) { return []; }
+    if (typeof query != 'string') { return toArray(query); }
+    if (typeof root == 'string') {
+      root = byId(root);
+      if(!root){ return []; }
+    }
+
+    root = root || document;
+    var rootIsDoc = (root.nodeType == 9);
+    var doc = rootIsDoc ? root : (root.ownerDocument || document);
+
+    // rewrite the query to be ID rooted
+    if (!rootIsDoc || ('>~+'.indexOf(query.charAt(0)) >= 0)) {
+      root.id = root.id || ('qUnique' + (ctr++));
+      query = '#' + root.id + ' ' + query;
+    }
+    // don't choke on something like ".yada.yada >"
+    if ('>~+'.indexOf(query.slice(-1)) >= 0) { query += ' *'; }
+
+    return toArray(doc.querySelectorAll(query));
+  };
+
+  var strToArray = function(s) {
+    if (typeof s == 'string' || s instanceof String) {
+      if (s.indexOf(' ') < 0) {
+        a1[0] = s;
+        return a1;
+      } else {
+        return s.split(spaces);
+      }
+    }
+    return s;
+  };
+
+  var addClass = function(node, classStr) {
+    classStr = strToArray(classStr);
+    var cls = ' ' + node.className + ' ';
+    for (var i = 0, len = classStr.length, c; i < len; ++i) {
+      c = classStr[i];
+      if (c && cls.indexOf(' ' + c + ' ') < 0) {
+        cls += c + ' ';
+      }
+    }
+    node.className = cls.trim();
+  };
+
+  var removeClass = function(node, classStr) {
+    var cls;
+    if (classStr !== undefined) {
+      classStr = strToArray(classStr);
+      cls = ' ' + node.className + ' ';
+      for (var i = 0, len = classStr.length; i < len; ++i) {
+        cls = cls.replace(' ' + classStr[i] + ' ', ' ');
+      }
+      cls = cls.trim();
+    } else {
+      cls = '';
+    }
+    if (node.className != cls) {
+      node.className = cls;
+    }
+  };
+
+  var toggleClass = function(node, classStr) {
+    var cls = ' ' + node.className + ' ';
+    if (cls.indexOf(' ' + classStr.trim() + ' ') >= 0) {
+      removeClass(node, classStr);
+    } else {
+      addClass(node, classStr);
+    }
+  };
+
+  var ua = navigator.userAgent;
+  var isFF = parseFloat(ua.split('Firefox/')[1]) || undefined;
+  var isWK = parseFloat(ua.split('WebKit/')[1]) || undefined;
+  var isOpera = parseFloat(ua.split('Opera/')[1]) || undefined;
+
+  var canTransition = (function() {
+  var ver = parseFloat(ua.split('Version/')[1]) || undefined;
+  // test to determine if this browser can handle CSS transitions.
+  var cachedCanTransition = 
+    (isWK || (isFF && isFF > 3.6 ) || (isOpera && ver >= 10.5));
+    return function() { return cachedCanTransition; }
+  })();
+
+  //
+  // Slide class
+  //
+  var Slide = function(node, idx) {
+    this._node = node;
+    if (idx >= 0) {
+      this._count = idx + 1;
+    }
+    if (this._node) {
+      addClass(this._node, 'slide distant-slide');
+    }
+    this._makeCounter();
+    this._makeBuildList();
+  };
+
+  Slide.prototype = {
+    _node: null,
+    _count: 0,
+    _buildList: [],
+    _visited: false,
+    _currentState: '',
+    _states: [ 'distant-slide', 'far-past',
+               'past', 'current', 'future',
+               'far-future', 'distant-slide' ],
+    setState: function(state) {
+      if (typeof state != 'string') {
+        state = this._states[state];
+      }
+      if (state == 'current' && !this._visited) {
+        this._visited = true;
+        this._makeBuildList();
+      }
+      removeClass(this._node, this._states);
+      addClass(this._node, state);
+      this._currentState = state;
+
+      // delay first auto run. Really wish this were in CSS.
+      /*
+      this._runAutos();
+      */
+      var _t = this;
+      setTimeout(function(){ _t._runAutos(); } , 400);
+    },
+    _makeCounter: function() {
+      if(!this._count || !this._node) { return; }
+      var c = doc.createElement('span');
+      c.innerHTML = this._count;
+      c.className = 'counter';
+      this._node.appendChild(c);
+    },
+    _makeBuildList: function() {
+      this._buildList = [];
+      if (disableBuilds) { return; }
+      if (this._node) {
+        this._buildList = query('[data-build] > *', this._node);
+      }
+      this._buildList.forEach(function(el) {
+        addClass(el, 'to-build');
+      });
+    },
+    _runAutos: function() {
+      if (this._currentState != 'current') {
+        return;
+      }
+      // find the next auto, slice it out of the list, and run it
+      var idx = -1;
+      this._buildList.some(function(n, i) {
+        if (n.hasAttribute('data-auto')) {
+          idx = i;
+          return true;
+        }
+        return false;
+      });
+      if (idx >= 0) {
+        var elem = this._buildList.splice(idx, 1)[0];
+        var transitionEnd = isWK ? 'webkitTransitionEnd' : (isFF ? 'mozTransitionEnd' : 'oTransitionEnd');
+        var _t = this;
+        if (canTransition()) {
+          var l = function(evt) {
+            elem.parentNode.removeEventListener(transitionEnd, l, false);
+            _t._runAutos();
+          };
+          elem.parentNode.addEventListener(transitionEnd, l, false);
+          removeClass(elem, 'to-build');
+        } else {
+          setTimeout(function() {
+            removeClass(elem, 'to-build');
+            _t._runAutos();
+          }, 400);
+        }
+      }
+    },
+    buildNext: function() {
+      if (!this._buildList.length) {
+        return false;
+      }
+      removeClass(this._buildList.shift(), 'to-build');
+      return true;
+    },
+  };
+
+  //
+  // SlideShow class
+  //
+  var SlideShow = function(slides) {
+    this._slides = (slides || []).map(function(el, idx) {
+      return new Slide(el, idx);
+    });
+
+    var h = window.location.hash;
+    try {
+      this.current = parseInt(h.split('#slide')[1], 10);
+    }catch (e) { /* squeltch */ }
+    this.current = isNaN(this.current) ? 1 : this.current;
+    var _t = this;
+    doc.addEventListener('keydown', 
+        function(e) { _t.handleKeys(e); }, false);
+    doc.addEventListener('mousewheel', 
+        function(e) { _t.handleWheel(e); }, false);
+    doc.addEventListener('DOMMouseScroll', 
+        function(e) { _t.handleWheel(e); }, false);
+    doc.addEventListener('touchstart', 
+        function(e) { _t.handleTouchStart(e); }, false);
+    doc.addEventListener('touchend', 
+        function(e) { _t.handleTouchEnd(e); }, false);
+    window.addEventListener('popstate',
+        function(e) { _t.go(e.state); }, false);
+    this._update();
+  };
+
+  SlideShow.prototype = {
+    _slides: [],
+    _update: function(dontPush) {
+      document.querySelector('#presentation-counter').innerText = this.current;
+      if (history.pushState) {
+        if (!dontPush) {
+          history.pushState(this.current, 'Slide ' + this.current, '#slide' + this.current);
+        }
+      } else {
+        window.location.hash = 'slide' + this.current;
+      }
+      for (var x = this.current-1; x < this.current + 7; x++) {
+        if (this._slides[x-4]) {
+          this._slides[x-4].setState(Math.max(0, x-this.current));
+        }
+      }
+    },
+
+    current: 0,
+    next: function() {
+      if (!this._slides[this.current-1].buildNext()) {
+        this.current = Math.min(this.current + 1, this._slides.length);
+        this._update();
+      }
+    },
+    prev: function() {
+      this.current = Math.max(this.current-1, 1);
+      this._update();
+    },
+    go: function(num) {
+      if (!num) return;
+      if (history.pushState && this.current != num) {
+        history.replaceState(this.current, 'Slide ' + this.current, '#slide' + this.current);
+      }
+      this.current = num;
+      this._update(true);
+    },
+
+    _notesOn: false,
+    showNotes: function() {
+      var isOn = this._notesOn = !this._notesOn;
+	  console.log(isOn);
+      query('.notes').forEach(function(el) {
+        el.style.display = (isOn) ? 'inline-block' : 'none';
+	    console.log(isOn);
+      });
+    },
+    switch3D: function() {
+      toggleClass(document.body, 'three-d');
+    },
+    handleWheel: function(e) {
+      var delta = 0;
+      if (e.wheelDelta) {
+        delta = e.wheelDelta/120;
+        if (isOpera) {
+          delta = -delta;
+        }
+      } else if (e.detail) {
+        delta = -e.detail/3;
+      }
+
+      if (delta > 0 ) {
+        this.prev();
+        return;
+      }
+      if (delta < 0 ) {
+        this.next();
+        return;
+      }
+    },
+    handleKeys: function(e) {
+      
+      if (/^(input|textarea)$/i.test(e.target.nodeName)) return;
+      
+      switch (e.keyCode) {
+        case 37: // left arrow
+          this.prev(); break;
+        case 39: // right arrow
+        case 32: // space
+          this.next(); break;
+        case 50: // 2
+          this.showNotes(); break;
+        case 51: // 3
+          this.switch3D(); break;
+      }
+    },
+    _touchStartX: 0,
+    handleTouchStart: function(e) {
+      this._touchStartX = e.touches[0].pageX;
+    },
+    handleTouchEnd: function(e) {
+      var delta = this._touchStartX - e.changedTouches[0].pageX;
+      var SWIPE_SIZE = 150;
+      if (delta > SWIPE_SIZE) {
+        this.next();
+      } else if (delta< -SWIPE_SIZE) {
+         this.prev();
+       }
+    },
+  };
+
+  // Initialize
+  var slideshow = new SlideShow(query('.slide'));
+})();
+
+
+  </script>
+  <!--[if lt IE 9]>
+  <script 
+  src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({ mode: "overlay" });</script>
+  <![endif]--> 
+ 
+  </body> 
+</html>
