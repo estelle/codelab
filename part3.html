@@ -1,0 +1,123 @@
+<!doctype html>
+<html> 
+  <head> 
+    <!--[if gte IE 9]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <![endif]--> 
+    <!--[if lt IE 9]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
+    <![endif]--> 
+    <meta charset="utf-8" />
+    <title>CSS3: From Knowledgable to Ninja</title>
+     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'> 
+   <link rel="stylesheet" href="css/screen.css" media="projection, screen"/>  
+   <link rel="stylesheet" href="css/print.css" media="print"/>
+ <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'> 
+    
+  </head> 
+  <body> 
+  
+  <div id="topinfo">
+
+  </div>
+  
+  <div id="info">
+    <p>
+    <span class="key">&rarr;</span> and <span class="key">&rarr;</span> to change slides. 
+    <span class="key">2</span> for comments. <a href="http://www.standardista.com/webstock">www.standardista.com/webstock</a>
+    </p>
+  </div>
+  
+  <div id="presentation">
+  
+   <div id="presentation-counter"></div>
+      
+   <div id="slides">
+   
+<!-- intro --> 
+ <div class="slide">
+     <header>
+      <h1>CSS3: A Not So Quick Overview</h1>
+     </header>
+     <p>
+     	<a href="http://www.sitepoint.com/books/htmlcss1/" style="float: right; margin-right: 20px; border:none"><img src="http://www.sitepointstatic.com/images/books/htmlcss1/3dcover-flat.png" alt="HTML5 &amp; CSS3 for the Real World" style="border:none;"></a><a href="http://shop.oreilly.com/product/0636920021711.do" style="border:none"> <img src="../forms/icons/oreilly.gif" alt="Mobile HTML5: Using the Latest Today by Estelle Weyl and Maximiliano Firtman" style="float: left;"></a>
+     </p>
+     <h1 style="clear:both;">Estelle Weyl<br/>
+     	<a href="http://standardista.com">www.standardista.com</a><br>
+        <a href="http://twitter.com/estellevw">@estellevw</a>
+     </h1>  
+    </div>
+  
+<!-- OUTLINE -->
+   
+    <div class="slide intro">
+     <header style="font-size:30px">
+      <h1>Part 1: Selectors </h1>
+      <h1>Part 2: Media Queries</h1>
+      <h1>Part 3. Specificity</h1>
+      <h1>Part 4: Most properties</h1>
+      <h1>Part 5: Transitions, Tranforms and Animation</h1>
+     </header>
+    </div> 
+
+    
+
+<div class="slide intro"> 
+     <header><h1>Part 3: Specificity</h1></header> 
+</div>
+  
+<!-- Specificity -->
+<div class="slide normal"> 
+     <header><h1>Understanding Specificity</h1></header> 
+     <section class="content"> 
+     <ul class="specificity">
+     	<li class="id">ID</li>
+        <li class="class">Class</li>
+        <li class="element">Element</li>
+     </ul>
+     <ul class="specificity nonspec">
+     	<li>1-0-0</li>
+        <li>0-1-0</li>
+        <li>0-0-1</li>
+     </ul>
+     <p><a href="http://www.standardista.com/wp-content/uploads/2012/01/specifishity1.pdf" target="_blank">PDF</a><br>
+     <a href="files/11_specificity.html" target="play">Examples</a></p>
+     </section>
+ </div> 
+
+<!-- Specificity PDF --> 
+<div class="slide" style="padding: 0;"> 
+     <object data="http://www.standardista.com/wp-content/uploads/2012/01/specifishity1.pdf" style="width:100%; height:100%; overflow:scroll"></object>
+</div>
+
+<!-- Specificity Notes -->
+<div class="slide normal"> 
+     <header><h1>Specificity: The less than obvious</h1></header> 
+     <section class="content">
+ <p>The * selector, or global selector, has no value.</p>
+ <pre>* {} 0-0-0 </pre>
+
+<p>Combinators, like ~, >, and + have no value</p>
+<pre>ul li {} 0-0-2
+ul > li {} 0-0-2</pre>
+
+<p>:not has no value, but parameter does</p>
+<pre>.myClass:not(p) {} 0-1-1</pre>
+
+<p>Specificity is not inheritance</p>
+     </section>
+</div>
+   
+<div class="slide intro"> 
+     <header><h1>Part 4: CSS3 Features</h1></header>
+    <h1><a href="part4.html">Next ➹</a></h1>
+</div>
+
+    
+    
+  
+   
+  </div>
+  <script src="css/slide.js"></script>
+  </body> 
+</html>
