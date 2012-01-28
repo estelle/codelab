@@ -1,4 +1,4 @@
-<!doctype html>
+<!doctype HTML>
 <meta charset="utf-8">
 <html> 
   <head> 
@@ -9,12 +9,12 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
     <![endif]--> 
     <meta charset="utf-8" />
-    <title>HTML5 &amp; CSS3: The Good Enough Parts</title>
+    <title>CSS3 Plethora of Properties</title>
     <link href="http://fonts.googleapis.com/css?family=Paytone+One:regular" rel="stylesheet" type="text/css" />
     
-<link rel="stylesheet" media="print" href="../openwebcamp3/print.css"/>  
-<link rel="stylesheet" media="all" href="../openwebcamp3/screen.css"/>  
-<link rel="stylesheet" media="all" href="../openwebcamp3/effects.css"/> 
+<link rel="stylesheet" media="print" href="http://www.standardista.com/openwebcamp3/print.css"/>  
+<link rel="stylesheet" media="all" href="http://www.standardista.com/openwebcamp3/screen.css"/>  
+<link rel="stylesheet" media="all" href="http://www.standardista.com/openwebcamp3/effects.css"/> 
 <link rel="stylesheet" media="all" href="css/screen.css"/>  
 <link rel="stylesheet" href="http://standardista.com/cssgradients/css/religion.css"/> 
 <style>
@@ -64,7 +64,7 @@ body, #presentation, #slides {
       <h1>CSS3: A Not So Quick Overview</h1>
      </header>
      <p>
-     	<a href="http://www.sitepoint.com/books/htmlcss1/" style="float: right; margin-right: 20px; border:none"><img src="http://www.sitepointstatic.com/images/books/htmlcss1/3dcover-flat.png" alt="HTML5 &amp; CSS3 for the Real World" style="border:none;"></a><a href="http://shop.oreilly.com/product/0636920021711.do" style="border:none"> <img src="../forms/icons/oreilly.gif" alt="Mobile HTML5: Using the Latest Today by Estelle Weyl and Maximiliano Firtman" style="float: left;"></a>
+     	<a href="http://www.sitepoint.com/books/htmlcss1/" style="float: right; margin-right: 20px; border:none"><img src="http://www.sitepointstatic.com/images/books/htmlcss1/3dcover-flat.png" alt="HTML5 &amp; CSS3 for the Real World" style="border:none;"></a><a href="http://shop.oreilly.com/product/0636920021711.do" style="border:none"> <img src="http://www.standardista.com/forms/icons/oreilly.gif" alt="Mobile HTML5: Using the Latest Today by Estelle Weyl and Maximiliano Firtman" style="float: left;"></a>
      </p>
      <h1 style="clear:both;">Estelle Weyl<br/>
      	<a href="http://standardista.com">www.standardista.com</a><br>
@@ -535,8 +535,20 @@ box-shadow:
 </section>
 </div>    
  
+<!-- Google Fonts 
+<div class="slide object"> 
+		<object data="http://www.google.com/webfonts"  style="height:100%; width: 100%; background:url(img/googlefonts.gif); background-position: top center">
+        </object><header><h1>Google Fonts</h1></header>
+        <a href="http://www.google.com/webfonts" class="objectlink" target="resource">Google Fonts</a>
+</div> -->
 
-     
+<!--Font resources 
+<div class="slide object">
+	<object data="http://www.fontsquirrel.com/fontface/generator"></object>
+    <header><h1>font-squirrel</h1></header>
+    <a href="http://www.fontsquirrel.com/fontface/generator" class="objectlink" target="resource">FontSquirrel @font-face generator</a>
+</div> 
+     -->
      
 <div class="slide" id="columnpage">
           <header> <h1>Columns</h1></header>
@@ -978,7 +990,7 @@ W = <input type="range" id="width" min="0" max="50" value="34" step="1" onChange
           </style>
           <section>
             <pre contenteditable>p {
-  text-overflow: ellipsis; <input type="range" min="0" max="100" value="94" onChange="changeWrapping(event)" style="float:right">
+  text-overflow: ellipsis; <input type="range" min="0" max="100" value="94" onChange="changeWrapping(event, 'textwraps')" style="float:right">
   white-space: nowrap;
   overflow: hidden;
 }</pre>
@@ -999,15 +1011,15 @@ W = <input type="range" id="width" min="0" max="50" value="34" step="1" onChange
   <ul class="icons" style="clear: both;">
          <li class="chrome">Chrome</li>
          <li class="safari">Safari</li>
-         <li class="firefox new">Firefox 7</li>
+         <li class="firefox">Firefox 7</li>
          <li class="opera">Opera 11</li>
          <li class="ie">IE 6</li>
      </ul>          
           </section>
 
           <script defer="">
-            function changeWrapping(event) {
-              document.getElementById('textwraps').style.width = event.target.value + '%';
+            function changeWrapping(event, thisid) {
+              document.getElementById(thisid).style.width = event.target.value + '%';
             }
           </script>
     </section>
@@ -1017,7 +1029,8 @@ W = <input type="range" id="width" min="0" max="50" value="34" step="1" onChange
 	<header><h1>word-wrap: breakword</h1></header>
     <section class="content">
     <pre contenteditable>word-wrap:  normal | break-word</pre>
-    <div style="width: 15em; word-wrap:break-word;" class="codelike">
+    <input type="range" min="0" max="100" value="94" onChange="changeWrapping(event, 'breakword')" style="float:right">
+    <div style="min-width:1em; word-wrap:break-word; resize:both" class="codelike" id="breakword">
     Despite the old adage, smiles is not longer than supercalifragilisticexpialidocious.
     </div>
       <ul class="icons" style="clear: both;">
@@ -1027,7 +1040,11 @@ W = <input type="range" id="width" min="0" max="50" value="34" step="1" onChange
          <li class="opera">Opera 10.5</li>
          <li class="ie">IE 5.5</li>
      </ul>
-    </section>
+    </section><script defer="">
+            function changeWrapping(event, thisid) {
+              document.getElementById(thisid).style.width = event.target.value + '%';
+            }
+          </script>
 </div>  
 
 
